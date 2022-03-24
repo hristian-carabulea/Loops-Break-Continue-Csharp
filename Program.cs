@@ -20,6 +20,10 @@
         //################################  (1)
         for (i = 1; i < 11; i++)
         {
+            if (i == 5 || i == 6)
+            {
+                continue;
+            }
             System.Console.Write(i + " ");
         }
         System.Console.WriteLine();
@@ -27,7 +31,10 @@
         //################################ (2)
         i = 1;
         while (i < 11) {
-            System.Console.Write(i + " ");
+            if (i != 5 && i != 6)
+            {
+                System.Console.Write(i + " ");
+            }
             i++;
         }
         System.Console.WriteLine();
@@ -36,7 +43,9 @@
         i = 1;
         do
         {
-            System.Console.Write(i + " ");
+            if (i != 5 && i != 6) { 
+                System.Console.Write(i + " ");
+            }
             i++;
         }
         while (i < 11);
